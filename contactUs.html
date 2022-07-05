@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wDeveloperAG</title>
+    <link rel="stylesheet" href="cssStyles/contactUS.css">
+    <script src="https://kit.fontawesome.com/56bcfa3ab5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h2 class="contactUs">Contact Us</h2>
+            <input type="text" class="name" id="name" placeholder="Name" required><br>
+            <input type="text" class="phone" id="phone" placeholder="Phone Number" required><br>
+            <input type="email" class="email" id="email" placeholder="Email" required><br>
+            <input type="tex" class="msg" id="msg" placeholder="Message" required><br>
+            <button id="btn" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+        Host : "smtp.yourisp.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name " + document.getElementById("name").value 
+                +  "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone No: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("msg").value
+    }).then(
+      message => alert("Message sent succesfully")
+    );
+        }
+    </script>
+</body>
+</html>
