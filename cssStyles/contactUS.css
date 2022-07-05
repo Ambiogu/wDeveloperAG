@@ -85,3 +85,21 @@ form input:focus {
 .btn:hover {
     cursor: pointer;
 }
+
+	@media screen and (max-width:1024px){
+.container {
+	width: 100%;
+}
+
+header {
+	width:80%;
+}
+
+form {
+	width: 80%;
+}
+
+form input {
+	font-size: 20px;
+}
+}
