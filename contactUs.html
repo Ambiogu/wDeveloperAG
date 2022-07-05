@@ -24,7 +24,7 @@
             <input type="text" class="name" id="name" placeholder="Name" required><br>
             <input type="text" class="phone" id="phone" placeholder="Phone Number" required><br>
             <input type="email" class="email" id="email" placeholder="Email" required><br>
-            <input type="tex" class="msg" id="msg" placeholder="Message" required><br>
+            <textarea id="msg" class="msg" placeholder="Message"   maxlength="500" minlength="10" required></textarea><br>
             <button id="btn" class="btn">Submit</button>
         </form>
     </div>
@@ -33,10 +33,10 @@
     <script>
         function sendEmail(){
             Email.send({
-        Host : "smtp.yourisp.com",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
+        Host : "smtp.elasticemail.com",
+        Username : "wdeveloperag@gmail.com",
+        Password : "C6545018C1306BEFCFB025D30043D036C23F",
+        To : 'wdeveloperag@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form Enquiry",
         Body : "Name " + document.getElementById("name").value 
