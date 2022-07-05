@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
 header {
-    width: 61%;
-	margin:0 auto;
-	margin-top:20px;
+    width: 100%;
     padding: 20px 0px;
     box-sizing: border-box;
     background-color: #556272;
@@ -22,7 +29,7 @@ header ul li a {
     padding: 20px 30px;
     box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 40px;
     text-decoration: none;
     font-family: sans-serif;
     color: #fff;
@@ -32,10 +39,8 @@ header ul li :hover {
     color: #F4D707;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+i {
+	font-size:40px;
 }
 
 form {
@@ -87,16 +92,15 @@ form input:focus {
 }
 
 	@media screen and (max-width:1024px){
-.container {
+.main {
 	width: 100%;
 }
 
-header {
-	width:80%;
-}
 
 form {
-	width: 80%;
+	width: 100%;
+	margin-top:20px;
+height:2000px;
 }
 
 form input {
