@@ -116,4 +116,34 @@ header ul li :hover {
 .trdTitle {
 	width: 17%;
 }
+
+header {
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    background-color: #556272;
+}
+
+header ul li {
+    display: inline;
+    list-style: none;
+}
+
+header ul li a {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+header ul li :hover {
+    color: #F4D707;
+}
+
+i {
+	font-size:45px;
+}
 }
